@@ -3,483 +3,1178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Erin ❤️</title>
+
+<title>For Erin, My Little Panda 🐼❤️</title>
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Georgia, "Times New Roman", serif;
-  background:
-    radial-gradient(circle at top, #35172f 0%, #170b18 45%, #09060c 100%);
-  color:white;
-  min-height:100vh;
-  overflow-x:hidden;
+    font-family:Georgia,"Times New Roman",serif;
+    background:
+        radial-gradient(circle at top,#4b2142 0%,#1d0d1d 45%,#09060d 100%);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
 }
 
 .page{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:40px 20px;
-  position:relative;
-  overflow:hidden;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:45px 20px;
+    position:relative;
 }
 
 .container{
-  width:100%;
-  max-width:850px;
-  text-align:center;
-  position:relative;
-  z-index:2;
-}
-
-.badge{
-  font-family:Arial,sans-serif;
-  letter-spacing:5px;
-  text-transform:uppercase;
-  font-size:12px;
-  color:#ffb6d8;
-  margin-bottom:25px;
-}
-
-.photo{
-  width:min(330px,85vw);
-  height:min(430px,110vw);
-  object-fit:cover;
-  border-radius:35px;
-  border:2px solid rgba(255,255,255,.25);
-  box-shadow:
-    0 25px 80px rgba(255,55,140,.25),
-    0 0 50px rgba(255,120,190,.08);
-  margin-bottom:35px;
-  background:linear-gradient(135deg,#43233f,#17101a);
-}
-
-h1{
-  font-size:clamp(55px,10vw,105px);
-  line-height:.95;
-  margin-bottom:25px;
-  letter-spacing:-4px;
-}
-
-h1 span{
-  color:#ff4f91;
-}
-
-.subtitle{
-  font-family:Arial,sans-serif;
-  font-size:clamp(20px,4vw,32px);
-  line-height:1.5;
-  max-width:700px;
-  margin:auto;
-  color:#f7edf3;
-}
-
-.small{
-  margin-top:20px;
-  color:#c9b9c3;
-  font-family:Arial,sans-serif;
-  font-size:14px;
-}
-
-.button{
-  margin-top:45px;
-  padding:17px 35px;
-  border:none;
-  border-radius:50px;
-  background:linear-gradient(135deg,#ff3d86,#ff6a9f);
-  color:white;
-  font-size:17px;
-  cursor:pointer;
-  box-shadow:0 12px 35px rgba(255,55,130,.3);
-  transition:.3s;
-}
-
-.button:hover{
-  transform:translateY(-4px) scale(1.03);
-}
-
-.message{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:70px 20px;
+    width:min(850px,100%);
+    text-align:center;
+    position:relative;
+    z-index:2;
 }
 
 .card{
-  max-width:720px;
-  background:rgba(255,255,255,.055);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:35px;
-  padding:50px 35px;
-  backdrop-filter:blur(15px);
-  box-shadow:0 25px 80px rgba(0,0,0,.3);
+    width:min(780px,100%);
+    padding:45px 32px;
+    text-align:center;
+
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:35px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.35);
 }
 
-.card h2{
-  font-size:clamp(35px,7vw,60px);
-  margin-bottom:25px;
+.badge{
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#ffafd0;
+    margin-bottom:22px;
 }
 
-.card p{
-  font-family:Arial,sans-serif;
-  font-size:18px;
-  line-height:1.9;
-  color:#eadfe6;
+h1{
+    font-size:clamp(55px,10vw,95px);
+    line-height:1;
+    margin-bottom:25px;
+}
+
+h2{
+    font-size:clamp(35px,7vw,60px);
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+p{
+    font-family:Arial,sans-serif;
+    font-size:18px;
+    line-height:1.9;
+    color:#eee2e9;
 }
 
 .highlight{
-  color:#ff78aa;
-  font-weight:bold;
+    color:#ff78aa;
+    font-weight:bold;
 }
 
-.question{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:60px 20px;
+.quote{
+    font-family:Georgia,"Times New Roman",serif;
+    font-style:italic;
+    font-size:23px;
+    line-height:1.5;
+    color:#ffd0e2;
 }
 
-.question-box{
-  text-align:center;
-  max-width:800px;
+.photo{
+    width:min(350px,88vw);
+    height:min(450px,115vw);
+
+    object-fit:cover;
+
+    border-radius:35px;
+
+    border:2px solid rgba(255,255,255,.22);
+
+    box-shadow:
+        0 25px 80px rgba(255,70,140,.2);
+
+    margin-bottom:30px;
 }
 
-.question-box h2{
-  font-size:clamp(45px,9vw,90px);
-  margin-bottom:20px;
+button{
+    border:none;
+    border-radius:999px;
+
+    padding:17px 32px;
+    margin-top:30px;
+
+    background:
+        linear-gradient(135deg,#ff4289,#ff78ad);
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 12px 35px rgba(255,65,140,.3);
+
+    transition:.25s;
 }
 
-.question-box p{
-  font-family:Arial,sans-serif;
-  color:#d8cbd3;
-  font-size:18px;
-  margin-bottom:40px;
+button:hover{
+    transform:translateY(-3px) scale(1.03);
 }
 
-.buttons{
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  flex-wrap:wrap;
+.hidden{
+    display:none!important;
 }
 
-.yes{
-  padding:18px 50px;
-  border:none;
-  border-radius:50px;
-  background:#ff3f87;
-  color:white;
-  font-size:19px;
-  cursor:pointer;
-  box-shadow:0 12px 40px rgba(255,63,135,.3);
+.memory{
+    margin:30px 0;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.05);
+
+    border:
+        1px solid rgba(255,255,255,.12);
 }
 
-.no{
-  padding:18px 50px;
-  border:1px solid rgba(255,255,255,.25);
-  border-radius:50px;
-  background:transparent;
-  color:white;
-  font-size:19px;
-  cursor:pointer;
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:30px 0;
 }
 
-.final{
-  display:none;
-  min-height:100vh;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:40px 20px;
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+
+    border-radius:22px;
+
+    border:
+        1px solid rgba(255,255,255,.15);
 }
 
-.final.show{
-  display:flex;
+.timeline{
+    text-align:left;
+    max-width:650px;
+    margin:30px auto;
+}
+
+.event{
+    border-left:
+        2px solid #ff6da5;
+
+    padding:
+        0 0 25px 20px;
+
+    margin-left:10px;
+}
+
+.event strong{
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:2px;
+    color:#ffafd0;
 }
 
 .final h2{
-  font-size:clamp(55px,11vw,110px);
-  color:#ff72a8;
-  margin-bottom:25px;
+    font-size:clamp(50px,10vw,90px);
+    color:#ff72a8;
 }
 
-.final p{
-  font-family:Arial,sans-serif;
-  font-size:20px;
-  line-height:1.8;
-  max-width:650px;
-  color:#eee;
+.small{
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    color:#bfaeba;
+    margin-top:18px;
+}
+
+#hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:20;
 }
 
 .heart{
-  position:fixed;
-  bottom:-30px;
-  font-size:20px;
-  animation:float 7s linear forwards;
-  opacity:.8;
-  pointer-events:none;
-  z-index:1;
+    position:absolute;
+    bottom:-40px;
+    animation:
+        rise linear forwards;
 }
 
-@keyframes float{
-  0%{
-    transform:translateY(0) scale(.7) rotate(0);
-    opacity:0;
-  }
-  15%{opacity:.9;}
-  100%{
-    transform:translateY(-110vh) scale(1.4) rotate(25deg);
-    opacity:0;
-  }
+@keyframes rise{
+
+    to{
+        transform:
+            translateY(-115vh)
+            rotate(360deg);
+
+        opacity:0;
+    }
+
 }
 
 .sparkle{
-  position:fixed;
-  width:5px;
-  height:5px;
-  background:white;
-  border-radius:50%;
-  opacity:.5;
-  animation:twinkle 3s infinite;
+    position:fixed;
+
+    width:5px;
+    height:5px;
+
+    background:white;
+
+    border-radius:50%;
+
+    opacity:.5;
+
+    animation:
+        twinkle 3s infinite;
+
+    z-index:1;
 }
 
 @keyframes twinkle{
-  0%,100%{opacity:.15;transform:scale(.5);}
-  50%{opacity:1;transform:scale(1.5);}
+
+    0%,100%{
+        opacity:.15;
+        transform:scale(.5);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.5);
+    }
+
 }
 
-.footer{
-  text-align:center;
-  padding:30px;
-  font-family:Arial,sans-serif;
-  color:#806f7a;
-  font-size:12px;
+@media(max-width:650px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery img{
+        height:330px;
+    }
+
+    .card{
+        padding:35px 22px;
+    }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
-<div class="page">
+<div id="hearts"></div>
 
-  <div class="sparkle" style="top:15%;left:12%"></div>
-  <div class="sparkle" style="top:30%;right:15%"></div>
-  <div class="sparkle" style="top:65%;left:20%"></div>
-  <div class="sparkle" style="top:75%;right:25%"></div>
+<div class="sparkle" style="top:15%;left:12%;"></div>
+<div class="sparkle" style="top:30%;right:15%;"></div>
+<div class="sparkle" style="top:70%;left:20%;"></div>
+<div class="sparkle" style="top:78%;right:25%;"></div>
 
-  <div class="container">
 
-    <div class="badge">
-      A little message for my little cute panda 🐼
-    </div>
+<!-- ============================= -->
+<!-- PAGE 1 -->
+<!-- ============================= -->
 
-    <!--
-      IMPORTANT:
-      Later we will replace "erin.jpg" with Erin's photo.
-    -->
-    <img class="photo"
-         src="Bright smile at the doorstep.png"
-         alt="Erin">
+<section class="page" id="intro">
 
-    <h1>
-      Hi, Erin <span>♥</span>
-    </h1>
+<div class="container">
 
-    <div class="subtitle">
-      “There is someone I always want to see...”
-    </div>
-
-    <div class="small">
-      And somehow, that someone became you. 🐼
-    </div>
-
-    <button class="button"
-            onclick="document.getElementById('message').scrollIntoView()">
-      I have something to tell you ↓
-    </button>
-
-  </div>
+<div class="badge">
+A little question for my Little Panda 🐼
 </div>
 
 
-<section class="message" id="message">
-
-  <div class="card">
-
-    <h2>Dear Erin, 💗</h2>
-
-    <p>
-      I don't know exactly when it happened,
-      but somewhere between our conversations,
-      your smile, your little moments,
-      and the way you make ordinary days feel special...
-      <br><br>
-
-      I started looking forward to seeing you
-      a little more than I probably should. 😌
-      <br><br>
-
-      You became someone who makes me smile
-      without even trying.
-      <br><br>
-
-      And today, I wanted to stop hiding behind
-      ordinary words and finally tell you
-      what has been sitting in my heart.
-      <br><br>
-
-      <span class="highlight">
-        You are really special to me. ❤️
-      </span>
-    </p>
-
-    <button class="button"
-            onclick="document.getElementById('question').scrollIntoView()">
-      One more thing... 💌
-    </button>
-
-  </div>
-
-</section>
+<img
+class="photo"
+src="Bright%20smile%20at%20the%20doorstep.png"
+alt="Erin">
 
 
-<section class="question" id="question">
-
-  <div class="question-box">
-
-    <div class="badge">So here goes...</div>
-
-    <h2>
-      Will you be<br>
-      <span style="color:#ff5b98;">my person?</span> 🐼❤️
-    </h2>
-
-    <p>
-      No pressure. No complicated words.<br>
-      Just one honest question from me to you.
-    </p>
-
-    <div class="buttons">
-
-      <button class="yes" onclick="sayYes()">
-        YES ❤️
-      </button>
-
-      <button class="no" id="noButton" onclick="moveNo()">
-        Not yet 🙈
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
+<h1>
+Hey, Erin
+<span style="color:#ff609d;">❤️</span>
+</h1>
 
 
-<section class="final" id="final">
-
-  <div>
-
-    <div style="font-size:70px;margin-bottom:15px;">
-      🐼💗
-    </div>
-
-    <h2>YAAAAAY!</h2>
-
-    <p>
-      You just made one very happy person. ❤️
-      <br><br>
-      I promise to make this little beginning
-      something worth remembering.
-      <br><br>
-      <strong>Thank you for choosing me. 🥹</strong>
-    </p>
-
-  </div>
-
-</section>
+<p class="quote">
+"Don't panic... this isn't a romantic proposal." 😂
+</p>
 
 
-<div class="footer">
-  Made with a little courage, a lot of feelings &nbsp;❤️
+<p style="margin-top:15px;">
+
+I just made something for one of my favourite people.
+
+</p>
+
+
+<button onclick="showPage('letter')">
+
+Open it 🐼💌
+
+</button>
+
 </div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 2 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="letter">
+
+<div class="card">
+
+<div class="badge">
+From your slightly annoying friend 😌
+</div>
+
+
+<h2>
+A Little Question for My Little Panda 🐼❤️
+</h2>
+
+
+<p>
+
+Okay, don't panic...
+
+this is
+<span class="highlight">
+NOT a romantic proposal
+</span>
+
+so you don't have to run away. 😂
+
+</p>
+
+
+<br>
+
+
+<p>
+
+There's just something I've been thinking about,
+
+and I want to ask you honestly.
+
+</p>
+
+
+<br>
+
+
+<p class="quote">
+
+Will you be my best friend for the long run? 🐼❤️
+
+</p>
+
+
+<button onclick="showPage('time')">
+
+Keep reading ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 3 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="time">
+
+<div class="card">
+
+<div class="badge">
+Our limited time here
+</div>
+
+
+<h2>
+More than just the time we have here
+</h2>
+
+
+<p>
+
+I know we have
+<span class="highlight">
+limited time together here
+</span>
+
+and eventually this chapter of our lives will come to an end.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+But I genuinely don't want our friendship to end when our time here does.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+I want the friendship we build here to
+
+<span class="highlight">
+last much longer than the time we have here.
+</span>
+
+</p>
+
+
+<br>
+
+
+<p>
+
+We might go to different places,
+meet new people,
+become busy with our own lives,
+and follow completely different paths.
+
+</p>
+
+
+<br>
+
+
+<p class="quote">
+
+But I hope none of that has to erase the friendship we started here. ❤️
+
+</p>
+
+
+<button onclick="showPage('friendship')">
+
+This is the kind of friendship I want 🫶🏻
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 4 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="friendship">
+
+<div class="card">
+
+<div class="badge">
+The friendship I want
+</div>
+
+
+<h2>
+
+Just us being us. 😂
+
+</h2>
+
+
+<p>
+
+I want us to be those friends who can talk about absolutely anything,
+
+laugh at the stupidest things,
+
+tease each other,
+
+annoy each other,
+
+and still somehow enjoy being around each other.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+I want us to support each other when life gets difficult,
+
+celebrate each other's little wins,
+
+help each other grow,
+
+and always be able to count on each other.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Let's experience new things,
+
+share random adventures,
+
+eat too much food,
+
+make stupid decisions,
+
+laugh until our stomachs hurt,
+
+and create memories that we'll still laugh about years later.
+
+</p>
+
+
+<br>
+
+
+<p class="quote">
+
+And yes...
+
+I am keeping my right to disturb you whenever I want. 😌😂
+
+</p>
+
+
+<button onclick="showPage('happiness')">
+
+There's something important ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 5 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="happiness">
+
+<div class="card">
+
+<div class="badge">
+This part really matters
+</div>
+
+
+<h2>
+
+I just want you to be happy. 🌸
+
+</h2>
+
+
+<p>
+
+I don't want to control you.
+
+I don't want to tell you how you should live your life.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+<span class="highlight">
+
+I just want you to be yourself,
+enjoy yourself,
+and live your life in your own way.
+
+</span>
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Honestly,
+
+seeing you genuinely happy and enjoying yourself makes me happy too.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+You don't always have to include me in everything.
+
+And that's completely okay.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Go out.
+
+Have fun.
+
+Make memories.
+
+Be crazy.
+
+Be your wonderfully naughty self sometimes. 😏😂🐼
+
+</p>
+
+
+<br>
+
+
+<p class="quote">
+
+If you're enjoying yourself,
+
+I'll be happy simply knowing that you're happy.
+
+</p>
+
+
+<button onclick="showPage('memories')">
+
+A few memories 📸
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 6 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="memories">
+
+<div class="card">
+
+<div class="badge">
+Little memories
+</div>
+
+
+<h2>
+
+And hopefully many more ❤️
+
+</h2>
+
+
+<div class="gallery">
+
+
+<img
+src="Bright%20smile%20at%20the%20doorstep.png"
+alt="Erin">
+
+
+<img
+src="WhatsApp%20Image%202026-08-09%20at%2012.59.47%20AM.jpeg"
+alt="Memory">
+
+</div>
+
+
+<div class="memory">
+
+<p>
+
+I hope one day we'll look back at these moments
+
+and laugh about how this strange little chapter
+
+brought us together.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Maybe these pictures will become tiny reminders
+
+of the beginning of a friendship that lasted much longer
+
+than we expected.
+
+</p>
+
+</div>
+
+
+<button onclick="showPage('future')">
+
+Imagine this years from now... ✨
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 7 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="future">
+
+<div class="card">
+
+<div class="badge">
+A little hope for the future
+</div>
+
+
+<h2>
+
+Years from now...
+
+</h2>
+
+
+<p>
+
+I hope we can still randomly text each other,
+
+ask
+
+<span class="highlight">
+"How are you?"
+</span>
+
+share something completely stupid,
+
+and laugh like nothing ever changed.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Maybe we'll be living completely different lives.
+
+Maybe we'll be in different cities.
+
+Maybe even different countries.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+But I hope we'll still remember where this friendship started.
+
+</p>
+
+
+<br>
+
+
+<p class="quote">
+
+"Different places. Different lives.
+
+Still best friends."
+
+</p>
+
+
+<button onclick="showPage('question')">
+
+So... here's my question 🐼
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 8 -->
+<!-- ============================= -->
+
+<section class="page hidden" id="question">
+
+<div class="container">
+
+<div class="badge">
+
+No pressure.
+
+Just an honest question.
+
+</div>
+
+
+<h2>
+
+Erin,
+
+<br>
+
+my Little Panda... 🐼
+
+</h2>
+
+
+<p>
+
+No pressure.
+
+No complicated promises.
+
+No expectations.
+
+</p>
+
+
+<br>
+
+
+<p class="quote" style="font-size:clamp(28px,6vw,48px);">
+
+Will you be my best friend for the long run? ❤️
+
+</p>
+
+
+<button onclick="accept()">
+
+YES — LET'S BE BEST FRIENDS 🐼❤️
+
+</button>
+
+
+<p class="small">
+
+Warning:
+
+accepting this friendship includes unlimited teasing,
+
+random messages,
+
+silly jokes,
+
+random adventures,
+
+and occasional nonsense. 😂
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- PAGE 9 -->
+<!-- ============================= -->
+
+<section class="page hidden final" id="success">
+
+<div class="card">
+
+<div style="font-size:75px;margin-bottom:15px;">
+
+🐼❤️✨
+
+</div>
+
+
+<div class="badge">
+
+Friendship accepted
+</div>
+
+
+<h2>
+
+You're stuck with me. 😂
+
+</h2>
+
+
+<p>
+
+Thank you, my Little Panda.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+I hope this friendship gives us countless reasons
+
+to laugh,
+
+support each other,
+
+explore,
+
+grow,
+
+and simply enjoy life.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+And whenever life gets busy,
+
+I hope we still find a little time
+
+to check on each other.
+
+</p>
+
+
+<br>
+
+
+<p class="quote">
+
+"Limited time here.
+
+Hopefully unlimited friendship after." ❤️
+
+</p>
+
+
+<br>
+
+
+<p>
+
+<strong>
+
+Best friends for the long run?
+
+Deal. 🐼🤝❤️
+
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<footer style="text-align:center;padding:30px;font:12px Arial,sans-serif;color:#887582;">
+
+Made with friendship,
+
+a little courage,
+
+and way too much Panda energy. 🐼
+
+</footer>
+
 
 
 <script>
 
+function showPage(id){
+
+document
+.querySelectorAll(".page")
+.forEach(page => page.classList.add("hidden"));
+
+document
+.getElementById(id)
+.classList.remove("hidden");
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+
 function createHeart(){
 
-  const heart=document.createElement("div");
+const heart=document.createElement("div");
 
-  heart.className="heart";
+heart.className="heart";
 
-  const hearts=["❤️","💗","💕","💖","💞","🌸","🐼"];
 
-  heart.innerText=
-    hearts[Math.floor(Math.random()*hearts.length)];
+const symbols=[
 
-  heart.style.left=
-    Math.random()*100+"vw";
+"❤️",
+"💕",
+"💖",
+"💗",
+"✨",
+"🌸",
+"🐼"
 
-  heart.style.fontSize=
-    (14+Math.random()*22)+"px";
+];
 
-  heart.style.animationDuration=
-    (5+Math.random()*5)+"s";
 
-  document.body.appendChild(heart);
+heart.textContent=
 
-  setTimeout(()=>{
-    heart.remove();
-  },10000);
+symbols[
+Math.floor(
+Math.random()*symbols.length
+)
+];
+
+
+heart.style.left=
+
+Math.random()*100+"vw";
+
+
+heart.style.fontSize=
+
+(14+Math.random()*24)+"px";
+
+
+heart.style.animationDuration=
+
+(5+Math.random()*5)+"s";
+
+
+document
+.getElementById("hearts")
+.appendChild(heart);
+
+
+setTimeout(
+
+()=>heart.remove(),
+
+10000
+
+);
+
 }
 
-setInterval(createHeart,700);
+
+setInterval(
+
+createHeart,
+
+850
+
+);
 
 
-function moveNo(){
 
-  const button=document.getElementById("noButton");
+function accept(){
 
-  button.innerText="Maybe? 🥺";
+showPage("success");
 
-  const x=(Math.random()*180)-90;
-  const y=(Math.random()*100)-50;
 
-  button.style.transform=
-    `translate(${x}px,${y}px)`;
+for(let i=0;i<60;i++){
+
+setTimeout(
+
+createHeart,
+
+i*65
+
+);
+
 }
-
-
-function sayYes(){
-
-  document.getElementById("question").style.display="none";
-
-  const final=document.getElementById("final");
-
-  final.classList.add("show");
-
-  for(let i=0;i<40;i++){
-    setTimeout(createHeart,i*80);
-  }
-
-  window.scrollTo({
-    top:document.body.scrollHeight,
-    behavior:"smooth"
-  });
 
 }
 
